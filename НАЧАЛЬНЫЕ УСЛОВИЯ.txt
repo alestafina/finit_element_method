@@ -1,0 +1,147 @@
+
+
+ПОЛИНОМ ВТОРОЙ СТЕПЕНИ
+
+double Functions::func(double x, double y) {
+   return -24 + 36 * x * x + 36 * y * y + 36 * x * y;
+}
+
+double Functions::u_g(double x, double y) {
+   return x * x + x * y + y * y;
+}
+
+double Functions::u_betta(double x, double y) {
+   return 6 + 6 * y + x * x + x * y + y * y;
+}
+
+double Functions::theta(double x, double y) {
+   return 6 + 6 * y;
+}
+
+double Functions::u_real(double x, double y) {
+   return x * x + x * y + y * y;
+}
+
+
+ПОЛИНОМ ТРЕТЬЕЙ СТЕПЕНИ
+
+double Functions::func(double x, double y) {
+   return -48 * (x + y) + 36 * x * x * x + 36 * x * x * y + 36 * x * y * y + 36 * y * y * y;
+}
+
+double Functions::u_g(double x, double y) {
+   return x * x * x + x * x * y + x * y * y + y * y * y;
+}
+
+double Functions::u_betta(double x, double y) {
+   return 6 * (3 * y * y + 2 * x * y + x * x) + x * x * x + x * x * y + x * y * y + y * y * y;
+}
+
+double Functions::theta(double x, double y) {
+   return 6 * (3 * y * y + 2 * x * y + x * x);
+}
+
+double Functions::u_real(double x, double y) {
+   return x * x * x + x * x * y + x * y * y + y * y * y;
+}
+
+
+ПОЛИНОМ ЧЕТВЕРТОЙ СТЕПЕНИ
+
+double Functions::func(double x, double y) {
+   return 36 * (x*x*x*x + y*y*y*y) - 12* (x*x +y*y);
+}
+
+double Functions::u_g(double x, double y) {
+   return x*x*x*x + y*y*y*y;
+}
+
+double Functions::u_betta(double x, double y) {
+   return 4 * y * y * y + x * x * x * x + y * y * y * y;
+}
+
+double Functions::theta(double x, double y) {
+   return 4* y * y * y;
+}
+
+double Functions::u_real(double x, double y) {
+   return x*x*x*x + y*y*y*y;
+}
+
+
+СЕТКА
+
+49
+
+1.0 1.0 1.0
+
+7
+0 0.5 1 1.5 2 2.5 3
+
+7
+0 0.5 1 1.5 2 2.5 3
+
+36
+1 2 1 2
+1 2 2 3
+1 2 3 4
+1 2 4 5
+1 2 5 6
+1 2 6 7
+
+2 3 1 2
+2 3 2 3
+2 3 3 4
+2 3 4 5
+2 3 5 6
+2 3 6 7
+
+3 4 1 2
+3 4 2 3 
+3 4 3 4
+3 4 4 5
+3 4 5 6
+3 4 6 7
+
+4 5 1 2
+4 5 2 3
+4 5 3 4
+4 5 4 5
+4 5 5 6
+4 5 6 7
+
+5 6 1 2
+5 6 2 3
+5 6 3 4
+5 6 4 5
+5 6 5 6
+5 6 6 7
+
+6 7 1 2
+6 7 2 3
+6 7 3 4
+6 7 4 5
+6 7 5 6
+6 7 6 7
+
+
+
+double Functions::func(double x, double y) {
+   return 2 * (sin(x) + cos(y));
+}
+
+double Functions::u_g(double x, double y) {
+   return sin(x) + cos(y);
+}
+
+double Functions::u_betta(double x, double y) {
+   return 1 + y + x * x + x * y + y * y;
+}
+
+double Functions::theta(double x, double y) {
+   return 1 + y;
+}
+
+double Functions::u_real(double x, double y) {
+   return sin(x) + cos(y);
+}
